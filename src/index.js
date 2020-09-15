@@ -12,7 +12,7 @@ const getFibonacci = n => {
 };
 
 /**
- * @description See https://en.wikipedia.org/wiki/Fibonacci_number#Binet's_formula. Note: this **is** faster than the 'normal' algorithm;
+ * @description See https://en.wikipedia.org/wiki/Fibonacci_number#Binet's_formula. Note: This **is** faster than the 'normal' algorithm but **will** be inexact with big numbers. Try `getFibonacciFast()` when n is a big number.
  * @param {number} n
  * @returns {number} The n-th Fibonacci number
  */
@@ -23,4 +23,17 @@ const getFibonacciBinet = n => {
     return round(abs(näherung));
 };
 
-module.exports = { getFibonacci, getFibonacciBinet };
+/**
+ * @description Note: This is faster, more efficient and more exact then any other function this package provides
+ * @param {number} n
+ * @returns {number} The n-th Fibonacci number
+ */
+const getFibonacciFast = n => {
+    let fibos = [1, 1];
+    for (let _ = 0; _ < n; _++) {
+        fibos.push(fibos[fibos.length - 1] + fibos[fibos.length - 2]);
+    }
+    return fibos[fibos.length - 1];
+};
+
+module.exports = { getFibonacci, getFibonacciBinet, getFibonacciFast };
