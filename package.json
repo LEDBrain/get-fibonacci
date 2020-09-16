@@ -8,14 +8,14 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/KokosnussDEV/get-fibonacci.git"
+        "url": "git+https://github.com/TeamCoffeeCodes/get-fibonacci.git"
     },
-    "author": "KokosnussDEV",
+    "author": "TeamCoffeeCodes",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/KokosnussDEV/get-fibonacci/issues"
+        "url": "https://github.com/TeamCoffeeCodes/get-fibonacci/issues"
     },
-    "homepage": "https://github.com/KokosnussDEV/get-fibonacci#readme",
+    "homepage": "https://github.com/TeamCoffeeCodes/get-fibonacci#readme",
     "devDependencies": {
         "eslint": "^7.9.0",
         "eslint-plugin-prettier": "^3.1.4",
