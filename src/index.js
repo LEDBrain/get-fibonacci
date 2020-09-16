@@ -29,11 +29,14 @@ const getFibonacciBinet = n => {
  * @returns {number} The n-th Fibonacci number
  */
 const getFibonacciFast = n => {
-    let fibos = [1, 1];
+    let last = BigInt(1);
+    let slast = BigInt(1);
     for (let _ = 0; _ < n; _++) {
-        fibos.push(fibos[fibos.length - 1] + fibos[fibos.length - 2]);
+        let temp = last;
+        last = slast;
+        slast = temp + last;
     }
-    return fibos[fibos.length - 1];
+    return slast;
 };
 
 module.exports = { getFibonacci, getFibonacciBinet, getFibonacciFast };
