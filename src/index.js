@@ -12,7 +12,7 @@ const getFibonacci = n => {
 };
 
 /**
- * @description See https://en.wikipedia.org/wiki/Fibonacci_number#Binet's_formula. Note: This **is** faster than the 'normal' algorithm but **will** be inexact with big numbers. Try `getFibonacciFast()` when n is a big number.
+ * @description See https://en.wikipedia.org/wiki/Fibonacci_number#Closed-form_expression. Note: This **is** faster than the 'normal' algorithm but **will** be inexact with big numbers because it only returns an approximation.
  * @param {number} n
  * @returns {number} The n-th Fibonacci number
  */
@@ -30,7 +30,7 @@ const getFibonacciBinet = n => {
  */
 const getFibonacciFast = n => {
     let last = BigInt(1);
-    let slast = BigInt(1);
+    let slast = BigInt(0);
     for (let _ = 0; _ < n; _++) {
         let temp = last;
         last = slast;
