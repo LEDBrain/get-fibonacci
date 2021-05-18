@@ -11,3 +11,4 @@ updates:
         include: "scope"
     reviewers:
       - "KokosnussDEV"
+    target-branch: "dev"
