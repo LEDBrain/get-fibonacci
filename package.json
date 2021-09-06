@@ -18,7 +18,7 @@
     "homepage": "https://github.com/TeamCoffeeCodes/get-fibonacci#readme",
     "devDependencies": {
         "eslint": "^7.9.0",
-        "eslint-plugin-prettier": "^3.1.4",
+        "eslint-plugin-prettier": "^4.0.0",
         "prettier": "^2.1.1"
     },
     "prettier": {
