@@ -5,10 +5,10 @@ updates:
     schedule:
       interval: "weekly"
     assignees:
-      - "kdev"
+      - "KokosnussDEV"
     commit-message:
         prefix: "⬆️"
         include: "scope"
     reviewers:
-      - "kdev"
+      - "KokosnussDEV"
     target-branch: "dev"
