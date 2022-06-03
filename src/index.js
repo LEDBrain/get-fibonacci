@@ -1,14 +1,21 @@
 /**
  * @description See https://en.wikipedia.org/wiki/Fibonacci_number for more infos. Note: This function will take a lot of time when n is a big number
  * @param {number} n
+ * @param {object} memo
  * @returns {number} The n-th Fibonacci number
  */
-const getFibonacci = n => {
-    return n === 0
-        ? 0
-        : n === 1
-        ? 1
-        : getFibonacci(n - 1) + getFibonacci(n - 2);
+const getFibonacci = (n, memo = {}) => {
+    if (memo[n]) {
+        return memo[n];
+    }
+
+    if (n <= 1) {
+        return n;
+    }
+
+    memo[n] = getFibonacci(n - 1, memo) + getFibonacci(n - 2, memo);
+
+    return memo[n];
 };
 
 /**
