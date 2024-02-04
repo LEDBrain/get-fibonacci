@@ -8,14 +8,14 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/TeamCoffeeCodes/get-fibonacci.git"
+        "url": "git+https://github.com/LEDBrain/get-fibonacci.git"
     },
-    "author": "TeamCoffeeCodes",
+    "author": "LEDBrain",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/TeamCoffeeCodes/get-fibonacci/issues"
+        "url": "https://github.com/LEDBrain/get-fibonacci/issues"
     },
-    "homepage": "https://github.com/TeamCoffeeCodes/get-fibonacci#readme",
+    "homepage": "https://github.com/LEDBrain/get-fibonacci#readme",
     "devDependencies": {
         "eslint": "^8.0.0",
         "eslint-plugin-prettier": "^4.0.0",
